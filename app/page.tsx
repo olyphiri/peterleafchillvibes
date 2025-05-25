@@ -77,7 +77,7 @@ export default function Home() {
           <div className="flex gap-6 md:gap-10">
             <Link href="/" className="items-center space-x-2 flex">
               <span className="font-bold text-2xl bg-gradient-to-r from-green-500 via-yellow-500 to-red-500 bg-clip-text text-transparent">
-                ChillVibes
+                PeterLeafChillVibes
               </span>
             </Link>
             <nav className="hidden gap-6 md:flex">
@@ -254,7 +254,7 @@ export default function Home() {
                 }}
               >
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
-                  Welcome to ChillVibes
+                  Welcome to PeterLeafChillVibes
                 </h1>
                 <p className="mx-auto max-w-[700px] text-yellow-100 md:text-xl">
                   Your ultimate destination for relaxation, entertainment, and good vibes
@@ -652,9 +652,9 @@ export default function Home() {
               <div className="text-yellow-100">
                 <h4 className="text-xl font-semibold mb-4">Our Mission</h4>
                 <p>
-                  At ChillVibes, we're dedicated to creating a space where enthusiasts can explore, connect, and find
-                  premium products that enhance their experience. Our carefully curated collection of accessories and
-                  reggae merchandise represents our commitment to quality and authenticity.
+                  At PeterLeafChillVibes, we're dedicated to creating a space where enthusiasts can explore, connect,
+                  and find premium products that enhance their experience. Our carefully curated collection of
+                  accessories and reggae merchandise represents our commitment to quality and authenticity.
                 </p>
                 <p className="mt-4">
                   All products are personally selected by Peter to ensure they meet our high standards. We believe in
@@ -700,7 +700,7 @@ export default function Home() {
       <footer className="w-full py-6 md:py-0 border-t border-yellow-600/20 bg-black/90 backdrop-blur-sm">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-24 px-4">
           <div className="flex flex-col items-center md:items-start">
-            <p className="text-sm text-yellow-100/70">© 2025 ChillVibes. All rights reserved.</p>
+            <p className="text-sm text-yellow-100/70">© 2025 PeterLeafChillVibes. All rights reserved.</p>
             <p className="text-sm text-yellow-100/70">Designed by Peter Olympus Phiri, Founder of Olytech</p>
           </div>
           <div className="flex flex-col items-center md:items-end">
