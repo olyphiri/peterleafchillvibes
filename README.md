@@ -1,30 +1,33 @@
-# Stoner website features
+# 🌿 Stoner Website Features – by Peter Leaf Chill Vibes
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+[![Deployed on Vercel](https://img.shields.io/badge/Live%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://peterleafchillvibes.vercel.app)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/peters-petsos-projects/v0-stoner-website-features)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/LlACr5e3OmZ)
+## ✨ Overview
 
-## Overview
+Welcome to **Stoner Website Features**, a smooth and minimal web experience crafted by **Peter Leaf Chill Vibes**. This project is built using modern web technologies, with a focus on simplicity, vibes, and clean UI.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Whether you’re here for inspiration or relaxation, this is my personal playground for experimenting with user-friendly features and aesthetic layouts.
 
-## Deployment
+## 🧱 Tech Stack
 
-Your project is live at:
+- **Next.js** – React framework for SSR and static site generation  
+- **Tailwind CSS** – Utility-first CSS framework for styling  
+- **TypeScript** – Typed JavaScript for better code structure and safety  
+- **ShadCN UI** – Beautiful pre-styled components  
+- **Lucide Icons** – Clean, consistent open-source icon set  
+- **Vercel** – For seamless hosting and continuous deployment
 
-**[https://vercel.com/peters-petsos-projects/v0-stoner-website-features](https://vercel.com/peters-petsos-projects/v0-stoner-website-features)**
+## 🌐 Live Site
 
-## Build your app
+Check it out here:  
+👉 **[peterleafchillvibes.vercel.app](https://peterleafchillvibes.vercel.app)**
 
-Continue building your app on:
+## 🚀 Getting Started
 
-**[https://v0.dev/chat/projects/LlACr5e3OmZ](https://v0.dev/chat/projects/LlACr5e3OmZ)**
+To run this project locally:
 
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+git clone https://github.com/your-username/stoner-website-features.git
+cd stoner-website-features
+npm install
+npm run dev
