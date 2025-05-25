@@ -2,7 +2,7 @@
 
 [![Live on Vercel](https://img.shields.io/badge/Live%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://peterleafchillvibes.vercel.app)
 [![GitHub Pages](https://img.shields.io/badge/Live%20on-GitHub%20Pages-blueviolet?style=for-the-badge&logo=github)](https://olyphiri.github.io/peterleafchillvibes/)
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=olyphiri.peterleafchillvibes)
+
 
 ---
 
