@@ -319,14 +319,21 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-              {[1, 2, 3, 4, 5, 6].map((item) => (
+              {[
+                { src: "/images/gallery-1.jpeg", alt: "Rasta vibes with dreadlocks and sunglasses" },
+                { src: "/images/gallery-2.jpeg", alt: "Peaceful sunset over water with thatched roof" },
+                { src: "/images/gallery-3.jpeg", alt: "Bob Marley wall art in golden tones" },
+                { src: "/images/gallery-4.jpeg", alt: "Tropical reggae art with palm trees and vibrant colors" },
+                { src: "/images/entergalactic-1.jpeg", alt: "Entergalactic chill moment" },
+                { src: "/images/entergalactic-2.jpeg", alt: "Entergalactic relaxation scene" },
+              ].map((image, index) => (
                 <div
-                  key={item}
+                  key={index}
                   className="overflow-hidden rounded-xl border-2 border-yellow-600/30 hover:border-green-500/50 transition-all duration-300 transform hover:scale-105 hover:rotate-1"
                 >
                   <Image
-                    src={`/placeholder.svg?height=600&width=800&text=Gallery+Image+${item}`}
-                    alt={`Gallery Image ${item}`}
+                    src={image.src || "/placeholder.svg"}
+                    alt={image.alt}
                     width={800}
                     height={600}
                     className="aspect-[4/3] w-full object-cover"
@@ -560,19 +567,9 @@ export default function Home() {
                   <Separator className="bg-yellow-600/30" />
 
                   <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <h4 className="text-xl font-semibold bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
-                        Chill Moments with Jabari
-                      </h4>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="border-yellow-600/50 text-yellow-100 hover:bg-yellow-600/20 hover:text-yellow-400"
-                        onClick={() => window.open("https://pin.it/62nqFi8SI", "_blank")}
-                      >
-                        View on Pinterest
-                      </Button>
-                    </div>
+                    <h4 className="text-xl font-semibold bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
+                      Chill Moments with Jabari
+                    </h4>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                       {[
@@ -591,6 +588,133 @@ export default function Home() {
                           <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
                         </div>
                       ))}
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Bob Marley Collection */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-black/80 backdrop-blur-sm">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
+                  Bob Marley Collection
+                </h2>
+                <p className="mx-auto max-w-[700px] text-yellow-100 md:text-xl">The Legend's Greatest Herb Anthems</p>
+              </div>
+            </div>
+
+            <div className="mx-auto max-w-7xl mt-10">
+              <Card className="overflow-hidden bg-black/70 border-yellow-600/30 hover:border-green-500/50 transition-all duration-300 text-yellow-100">
+                <div className="grid md:grid-cols-2 gap-8 p-6">
+                  <div className="relative h-96 md:h-full overflow-hidden rounded-xl">
+                    <Image
+                      src="/images/bob-marley-portrait.jpeg"
+                      alt="Bob Marley - The Legend"
+                      fill
+                      className="object-cover transition-all hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center space-y-6">
+                    <div>
+                      <h3 className="text-3xl font-bold bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent mb-2">
+                        Bob Marley
+                      </h3>
+                      <p className="text-yellow-100/70 text-lg">The King of Reggae & Herb Wisdom</p>
+                    </div>
+
+                    <div className="space-y-4 text-yellow-100">
+                      <p>
+                        Bob Marley wasn't just a musician; he was a spiritual guide who used cannabis as a sacrament.
+                        His songs about herb and consciousness opened minds worldwide, spreading the message of peace,
+                        love, and natural healing through his iconic reggae rhythms.
+                      </p>
+
+                      <div className="space-y-3">
+                        <h4 className="text-xl font-semibold text-green-400">Best Herb Songs:</h4>
+                        <ul className="space-y-2 text-yellow-100/90">
+                          <li>
+                            • <strong>"Kaya"</strong> - A celebration of the healing herb
+                          </li>
+                          <li>
+                            • <strong>"Easy Skanking"</strong> - Smooth vibes and natural highs
+                          </li>
+                          <li>
+                            • <strong>"Ganja Gun"</strong> - Raw and powerful herb anthem
+                          </li>
+                          <li>
+                            • <strong>"Herb"</strong> - The spiritual significance of cannabis
+                          </li>
+                          <li>
+                            • <strong>"Three Little Birds"</strong> - Peace and positivity
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Reggae Legend
+                      </Badge>
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Rastafarian
+                      </Badge>
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Herb Advocate
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Three Little Birds Lyrics */}
+                <div className="p-6 pt-0 space-y-6">
+                  <Separator className="bg-yellow-600/30" />
+
+                  <div className="bg-black/50 rounded-xl p-6 border border-green-500/30">
+                    <h4 className="text-2xl font-bold text-center bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent mb-6">
+                      "Three Little Birds" - Lyrics
+                    </h4>
+
+                    <div className="text-yellow-100 space-y-4 text-center max-w-2xl mx-auto">
+                      <div className="space-y-2">
+                        <p className="italic text-green-400">Don't worry about a thing</p>
+                        <p className="italic text-green-400">'Cause every little thing gonna be alright</p>
+                        <p className="italic text-green-400">Singin' don't worry about a thing</p>
+                        <p className="italic text-green-400">'Cause every little thing gonna be alright</p>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p>Rise up this mornin'</p>
+                        <p>Smiled with the risin' sun</p>
+                        <p>Three little birds</p>
+                        <p>Pitch by my doorstep</p>
+                        <p>Singin' sweet songs</p>
+                        <p>Of melodies pure and true</p>
+                        <p>Sayin', this is my message to you-ou-ou</p>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="italic text-green-400">Singin' don't worry 'bout a thing</p>
+                        <p className="italic text-green-400">'Cause every little thing gonna be alright</p>
+                        <p className="italic text-green-400">Don't worry 'bout a thing</p>
+                        <p className="italic text-green-400">'Cause every little thing gonna be alright</p>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-center gap-4 mt-6">
+                      <Button className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 hover:from-green-500 hover:via-yellow-500 hover:to-red-500 text-black font-bold">
+                        Listen on Spotify
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-yellow-600/50 text-yellow-100 hover:bg-yellow-600/20 hover:text-yellow-400"
+                      >
+                        View Full Discography
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -702,45 +826,45 @@ export default function Home() {
                   products={[
                     {
                       id: "acc1",
-                      name: "Premium Leaf Roller",
+                      name: "RAW Natural Rolling Papers",
                       price: 24.99,
-                      image: "/placeholder.svg?height=300&width=300&text=Leaf+Roller",
-                      description: "High-quality leaf roller for perfect results every time",
+                      image: "/images/premium-leaf-rollers.jpeg",
+                      description: "Premium RAW natural unrefined rolling papers in convenient cone format",
                     },
                     {
                       id: "acc2",
-                      name: "Wooden Grinder",
+                      name: "Galaxy Wooden Grinder",
                       price: 19.99,
-                      image: "/placeholder.svg?height=300&width=300&text=Wooden+Grinder",
-                      description: "Handcrafted wooden grinder with magnetic closure",
+                      image: "/images/wooden-grinder.jpeg",
+                      description: "Premium metal grinder with cosmic galaxy design and sharp grinding teeth",
                     },
                     {
                       id: "acc3",
-                      name: "Glass Storage Jar",
+                      name: "Glass Storage Jar Set",
                       price: 15.99,
-                      image: "/placeholder.svg?height=300&width=300&text=Storage+Jar",
-                      description: "Airtight glass jar for keeping your herbs fresh",
+                      image: "/images/glass-storage-jar.jpeg",
+                      description: "Airtight glass jars with wooden lids, includes 420 branded options",
                     },
                     {
                       id: "acc4",
-                      name: "Bamboo Rolling Tray",
+                      name: "Bamboo Rolling Tray Collection",
                       price: 29.99,
-                      image: "/placeholder.svg?height=300&width=300&text=Rolling+Tray",
-                      description: "Eco-friendly bamboo rolling tray with compartments",
+                      image: "/images/bamboo-rolling-tray.jpeg",
+                      description: "Handcrafted bamboo rolling trays with multiple compartments and organization",
                     },
                     {
                       id: "acc5",
-                      name: "Hemp Wick Dispenser",
+                      name: "Hemp Wick Lighter Sleeve",
                       price: 12.99,
-                      image: "/placeholder.svg?height=300&width=300&text=Hemp+Wick",
-                      description: "Natural hemp wick with convenient dispenser",
+                      image: "/images/hemp-wick-dispenser.jpeg",
+                      description: "Green hemp wick dispenser sleeve for natural, clean lighting",
                     },
                     {
                       id: "acc6",
-                      name: "Smell-Proof Bag",
+                      name: "Premium Smell-Proof Bag",
                       price: 34.99,
-                      image: "/placeholder.svg?height=300&width=300&text=Smell-Proof+Bag",
-                      description: "Carbon-lined bag to keep contents discreet",
+                      image: "/images/smell-proof-bag.jpeg",
+                      description: "Organized travel case with multiple compartments and odor-proof technology",
                     },
                   ]}
                   addToCart={addToCart}
