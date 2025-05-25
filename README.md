@@ -1,33 +1,37 @@
 # 🌿 Stoner Website Features – by Peter Leaf Chill Vibes
 
-[![Deployed on Vercel](https://img.shields.io/badge/Live%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://peterleafchillvibes.vercel.app)
+[![Live on Vercel](https://img.shields.io/badge/Live%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://peterleafchillvibes.vercel.app)
+[![GitHub Pages](https://img.shields.io/badge/Live%20on-GitHub%20Pages-blueviolet?style=for-the-badge&logo=github)](https://olyphiri.github.io/peterleafchillvibes/)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=olyphiri.peterleafchillvibes)
+
+---
 
 ## ✨ Overview
 
-Welcome to **Stoner Website Features**, a smooth and minimal web experience crafted by **Peter Leaf Chill Vibes**. This project is built using modern web technologies, with a focus on simplicity, vibes, and clean UI.
+Welcome to **Stoner Website Features**, a calm and minimal web experience crafted by **Peter Leaf Chill Vibes**. This is a personal space to showcase UI features, smooth design, and clean components built with modern tech.
 
-Whether you’re here for inspiration or relaxation, this is my personal playground for experimenting with user-friendly features and aesthetic layouts.
+> Think of it as a chill web playground — where vibes meet frontend.
 
-## 🧱 Tech Stack
+---
 
-- **Next.js** – React framework for SSR and static site generation  
-- **Tailwind CSS** – Utility-first CSS framework for styling  
-- **TypeScript** – Typed JavaScript for better code structure and safety  
-- **ShadCN UI** – Beautiful pre-styled components  
-- **Lucide Icons** – Clean, consistent open-source icon set  
-- **Vercel** – For seamless hosting and continuous deployment
+## 🧱 Built With
 
-## 🌐 Live Site
+- ⚛️ **Next.js** – React framework for SSR & static generation  
+- 🎨 **Tailwind CSS** – Utility-first styling  
+- 🧩 **ShadCN UI** – Pre-styled components  
+- 🖼 **Lucide Icons** – Open-source icon set  
+- ⚙️ **TypeScript** – Strongly typed for better structure  
+- ☁️ **Vercel + GitHub Pages** – Hosting & CI/CD
 
-Check it out here:  
-👉 **[peterleafchillvibes.vercel.app](https://peterleafchillvibes.vercel.app)**
+---
+
+## 🌐 Live Demo
+
+- [💻 Vercel Deployment](https://peterleafchillvibes.vercel.app)
+- [📄 GitHub Pages Version](https://olyphiri.github.io/peterleafchillvibes/)
+
+---
 
 ## 🚀 Getting Started
 
-To run this project locally:
 
-```bash
-git clone https://github.com/your-username/stoner-website-features.git
-cd stoner-website-features
-npm install
-npm run dev
