@@ -96,6 +96,13 @@ export default function Home() {
                 Movies
               </Link>
               <Link
+                href="#best-of-best"
+                className="flex items-center text-lg font-medium text-yellow-100 transition-colors hover:text-green-400"
+              >
+                <Film className="mr-1 h-4 w-4" />
+                Best of Best
+              </Link>
+              <Link
                 href="#sounds"
                 className="flex items-center text-lg font-medium text-yellow-100 transition-colors hover:text-green-400"
               >
@@ -172,6 +179,13 @@ export default function Home() {
                   >
                     <Film className="mr-2 h-4 w-4" />
                     Movies
+                  </Link>
+                  <Link
+                    href="#best-of-best"
+                    className="flex items-center text-lg font-medium transition-colors hover:text-green-400"
+                  >
+                    <Film className="mr-2 h-4 w-4" />
+                    Best of Best
                   </Link>
                   <Link
                     href="#sounds"
@@ -394,6 +408,193 @@ export default function Home() {
                   </CardFooter>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Best of Best Section */}
+        <section
+          id="best-of-best"
+          className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-black/90 via-black/80 to-black/90 backdrop-blur-sm"
+        >
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
+                  The Best of Best
+                </h2>
+                <p className="mx-auto max-w-[700px] text-yellow-100 md:text-xl">
+                  Legendary moments that define the culture
+                </p>
+              </div>
+            </div>
+
+            <div className="mx-auto max-w-7xl mt-10 space-y-16">
+              {/* How High */}
+              <Card className="overflow-hidden bg-black/70 border-yellow-600/30 hover:border-green-500/50 transition-all duration-300 text-yellow-100">
+                <div className="grid md:grid-cols-2 gap-8 p-6">
+                  <div className="relative h-96 md:h-full overflow-hidden rounded-xl">
+                    <Image
+                      src="/images/how-high.jpeg"
+                      alt="How High - Jamal and Silas at Harvard"
+                      fill
+                      className="object-cover transition-all hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center space-y-6">
+                    <div>
+                      <h3 className="text-3xl font-bold bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent mb-2">
+                        How High
+                      </h3>
+                      <p className="text-yellow-100/70 text-lg">Starring Method Man & Redman</p>
+                    </div>
+
+                    <div className="space-y-4 text-yellow-100">
+                      <p>
+                        How High is packed with hilarious moments, but one of the most iconic scenes is when Jamal and
+                        Silas use their special herbal blend to ace their college entrance exams, landing them at
+                        Harvard. Their unconventional approach to academia leads to wild antics, including turning a
+                        dorm room into a party hub, outsmarting professors, and challenging the Ivy League status quo.
+                      </p>
+
+                      <p>
+                        One standout moment is when Silas and Jamal confidently stroll into a classroom, completely
+                        unprepared, yet manage to outwit the professor with their street-smart logic. Their ability to
+                        mix humor with unexpected wisdom makes this scene unforgettable.
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Comedy Classic
+                      </Badge>
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Harvard Adventures
+                      </Badge>
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Street Smart
+                      </Badge>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <Button className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 hover:from-green-500 hover:via-yellow-500 hover:to-red-500 text-black font-bold">
+                        Watch Highlights
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-yellow-600/50 text-yellow-100 hover:bg-yellow-600/20 hover:text-yellow-400"
+                      >
+                        Read More
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Entergalactic */}
+              <Card className="overflow-hidden bg-black/70 border-yellow-600/30 hover:border-green-500/50 transition-all duration-300 text-yellow-100">
+                <div className="grid md:grid-cols-2 gap-8 p-6">
+                  <div className="relative h-96 md:h-full overflow-hidden rounded-xl">
+                    <Image
+                      src="/images/entergalactic-promo.jpeg"
+                      alt="Entergalactic - Kid Cudi's Animated Masterpiece"
+                      fill
+                      className="object-cover transition-all hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center space-y-6">
+                    <div>
+                      <h3 className="text-3xl font-bold bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent mb-2">
+                        Entergalactic
+                      </h3>
+                      <p className="text-yellow-100/70 text-lg">Kid Cudi's Animated Masterpiece</p>
+                    </div>
+
+                    <div className="space-y-4 text-yellow-100">
+                      <p>
+                        Entergalactic isn't just an animated love story—it's a vibe, a feeling, a full-blown experience.
+                        At the center is Jabari, a chill creative trying to find love, balance, and meaning in a noisy
+                        world. The most memorable scenes are when Jabari lights up, relaxes, and lets his thoughts
+                        float.
+                      </p>
+
+                      <p>
+                        One standout scene is when Jabari sparks up on his rooftop, the city skyline stretching behind
+                        him. The visuals melt into a dreamy haze, and you're floating right there with him. Kid Cudi's
+                        soundtrack creates a soundscape that makes each moment feel personal, warm, and endlessly
+                        cosmic.
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Kid Cudi
+                      </Badge>
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Animated Series
+                      </Badge>
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Cosmic Vibes
+                      </Badge>
+                      <Badge className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 text-black">
+                        Netflix Original
+                      </Badge>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <Button className="bg-gradient-to-r from-green-600 via-yellow-600 to-red-600 hover:from-green-500 hover:via-yellow-500 hover:to-red-500 text-black font-bold">
+                        Watch on Netflix
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-yellow-600/50 text-yellow-100 hover:bg-yellow-600/20 hover:text-yellow-400"
+                      >
+                        Listen to Soundtrack
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Gallery Section */}
+                <div className="p-6 pt-0 space-y-6">
+                  <Separator className="bg-yellow-600/30" />
+
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center">
+                      <h4 className="text-xl font-semibold bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
+                        Chill Moments with Jabari
+                      </h4>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="border-yellow-600/50 text-yellow-100 hover:bg-yellow-600/20 hover:text-yellow-400"
+                        onClick={() => window.open("https://pin.it/62nqFi8SI", "_blank")}
+                      >
+                        View on Pinterest
+                      </Button>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                      {[
+                        { src: "/images/entergalactic-1.jpeg", alt: "Jabari chilling on the couch" },
+                        { src: "/images/entergalactic-8.jpeg", alt: "Jabari relaxing by the window" },
+                        { src: "/images/entergalactic-2.jpeg", alt: "Intimate moment with plants" },
+                        { src: "/images/entergalactic-4.jpeg", alt: "Greenhouse chill session" },
+                        { src: "/images/entergalactic-5.jpeg", alt: "Rooftop city views" },
+                        { src: "/images/entergalactic-6.jpeg", alt: "Walking through the city" },
+                        { src: "/images/entergalactic-7.jpeg", alt: "Close intimate moment" },
+                      ].map((image, index) => (
+                        <div
+                          key={index}
+                          className="relative h-48 overflow-hidden rounded-xl border-2 border-yellow-600/30 hover:border-green-500/50 transition-all duration-300 transform hover:scale-105"
+                        >
+                          <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
         </section>
